@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe</title>
+
+  <!--Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Noto+Sans+Display:wght@400;500;600&family=Vend+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!--Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!--Font Awesome -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- HEADER START -->
+  <header class="bg-light py-3 shadow-sm sticky-top">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Logo -->
+        <div class="col-md-2 col-12 d-flex justify-content-center justify-content-md-start mb-2 mb-md-0">
+          <a href="#">
+            <img src="./images/image-removebg-preview.png" alt="Logo" style="width: 35%; height: auto;" />
+          </a>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="col-md-5 col-12 mb-2 mb-md-0">
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control font1" placeholder="Find a recipe or ingredient" />
+              <span class="input-group-text" style="background-color: #B53811; border: none;">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+              </span>
+            </div>
+          </form>
+        </div>
+
+        <!--Navigation Links -->
+        <div class="col-md-5 col-12 d-flex justify-content-center justify-content-md-end">
+          <nav class="navbar navbar-expand bg-light p-0">
+            <div class="navbar-nav">
+              <i class="fa-solid fa-user pt-2" style="color: #B53811;"></i>
+              <a class="nav-link pt-1 font1 h" href="#">Log in</a>
+              <a class="nav-link pt-1 font1 h" href="#">Newsletter</a>
+              <a class="nav-link pt-1 font1 h" href="#">Swipsteak</a>
+              <a class="nav-link pt-1 font1 h" href="#">My Recipes</a>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!--HEADER END -->
+
+  <main class="py-4">
+    <div id="recipe-container"></div>
+  </main>
+
+  <!--Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
