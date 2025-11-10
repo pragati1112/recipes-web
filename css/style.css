@@ -1,0 +1,236 @@
+body {
+  background-color: #f8fafc;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header h4 {
+  font-weight: 700;
+  color: #222;
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  background-color: #fff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* --- Recipe Grid --- */
+#recipe-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* --- Font Variations --- */
+.font1 {
+  font-family: "Source Serif 4", serif;
+}
+.font2 {
+  font-family: "Noto Sans Display", sans-serif;
+}
+.font3 {
+  font-family: "Vend Sans", sans-serif;
+}
+
+/* --- Card Styles --- */
+.card {
+  border: none;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Image Wrapper --- */
+.card-img-wrapper {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+/* --- Card Body --- */
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.card-text,
+.ingredients,
+.instructions {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.h:hover {
+  text-decoration: underline solid #e55a00;
+}
+.s{
+  font-size: 10px;
+}
+
+/* --- Button: View Details --- */
+.btn-view {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #ff6a00;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-view:hover {
+  background-color: #e55a00;
+  transform: translateY(-2px);
+}
+.bg-i {
+  padding: 10px;
+  background-color: aqua;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  #recipe-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  #recipe-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+.recipe-detail-wrapper {
+  background-color: #fff;
+   border-radius: 16px; 
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.recipe-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #B53811;
+}
+
+.recipe-image {
+  object-fit: cover;
+  height: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-text {
+  color: #444;
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.recipe-btn {
+  background-color: #e55a00;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.recipe-btn:hover {
+  background-color: #922b0d;
+  transform: scale(1.05);
+}
+.recipe-info-bar {
+  font-weight: 500;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.recipe-info-bar i {
+  color: #B53811;
+  margin-right: 6px;
+}
+.recipe-detail-wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.recipe-info-bar span {
+  font-weight: 500;
+  font-size: 15px;
+  color: #555;
+}
+
+.recipe-img {
+  /* border-radius: 15px; */
+  transition: transform 0.3s ease;
+}
+.recipe-img:hover {
+  transform: scale(1.03);
+}
+
+.recipe-btn {
+  background: #ff6a00;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+.recipe-btn:hover {
+  background: #e85c00;
+  transform: translateY(-2px);
+}
+
+.recipe-text {
+  color: #000000;
+  line-height: 1.6;
+}
+/* Recipe image frame fix */
+.recipe-img {
+  /* border-radius: 16px; */
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+/* Frame ke parent ko overflow hidden dena zaroori hai */
+.col-md-4 {
+  overflow: hidden;
+}
+
+
+
+
